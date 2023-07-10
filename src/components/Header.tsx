@@ -37,7 +37,7 @@ const Header: React.FC = () => {
 
   const MobileMenu: React.FC = () => {
     return (
-      <div className=" top-0 z-20 h-screen w-8/12 fixed right-0 flex flex-col items-end gap-8 bg-black">
+      <div className=" sm:hidden top-0 z-20 h-screen w-8/12 fixed right-0 flex flex-col items-end gap-8 bg-black">
         <div className=" h-24 w-24  flex items-end justify-end px-8">
           <Image
             src={Close}

@@ -67,9 +67,11 @@ const Header: React.FC = () => {
 
   return (
     <header className="text-white flex justify-between items-center m-8 h-24">
-      <Image src={Logo} alt="Logo" />
-      <div className="hidden sm:block border border-gray-decorator w-4/12 h-0" />
-      <nav className="hidden w-1/2 h-full sm:flex items-center justify-around backdrop-blur-sm">
+      <Link href="/">
+        <Image src={Logo} alt="Logo" />
+      </Link>
+      <div className="hidden sm:block border border-gray-decorator w-4/12 h-0 " />
+      <nav className="hidden w-1/2 h-full sm:flex items-center">
         {pages.map((page) => (
           <NavItem
             key={page.title}

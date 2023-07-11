@@ -37,7 +37,7 @@ const Header: React.FC = () => {
 
   const MobileMenu: React.FC = () => {
     return (
-      <div className=" sm:hidden top-0 z-20 h-screen w-8/12 fixed right-0 flex flex-col items-end gap-8 bg-black">
+      <div className=" sm:hidden top-0 z-20 h-screen w-8/12 fixed right-0 flex flex-col items-end gap-8 backdrop-blur-sm bg-white/30 ">
         <div className=" h-24 w-24  flex items-end justify-end px-8">
           <Image
             src={Close}
@@ -71,7 +71,7 @@ const Header: React.FC = () => {
         <Image src={Logo} alt="Logo" />
       </Link>
       <div className="hidden sm:block border border-gray-decorator w-4/12 h-0 " />
-      <nav className="hidden w-1/2 h-full sm:flex items-center">
+      <nav className="hidden w-1/2 h-full sm:flex items-center backdrop-blur-xl">
         {pages.map((page) => (
           <NavItem
             key={page.title}

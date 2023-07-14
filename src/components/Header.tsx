@@ -66,7 +66,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="text-white flex justify-between items-center m-8 h-24">
+    <header className="text-white flex justify-between items-center m-1 h-24">
       <Link href="/">
         <Image src={Logo} alt="Logo" />
       </Link>

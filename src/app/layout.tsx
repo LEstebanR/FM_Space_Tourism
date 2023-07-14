@@ -17,8 +17,6 @@ export default function RootLayout({
 
   let background;
 
-  console.log(pathname);
-
   switch (pathname) {
     case "/":
       background = "bg-home-mobile sm:bg-home-tablet md:bg-home-desktop";
@@ -33,17 +31,16 @@ export default function RootLayout({
     case "/technology":
       background =
         "bg-technology-mobile sm:bg-technology-tablet md:bg-technology-desktop";
+      break;
   }
 
-  console.log(background);
-
   return (
-    <html lang="en">
+    <html lang="en" className="h-screen ">
       <body
-        className={`${inter.className} text-white ${background}   bg-cover  bg-no-repeat`}
+        className={`${inter.className} flex flex-col h-screen  overflow-hidden bg-cover bg-no-repeat ${background}`}
       >
         <Header />
-        {children}
+        <div className="flex-1 overflow-y-auto">{children}</div>
       </body>
     </html>
   );

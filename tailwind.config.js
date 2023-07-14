@@ -8,7 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "gray-decorator": "#979797",
+        "gray-decorator": "rgba(151, 151, 151, 0.1036)",
+        primary: "#D0D6F9",
+        secondary: "#FFFFFF",
       },
       backgroundImage: {
         "home-mobile": "url('../assets/home/background-home-mobile.jpg')",
@@ -29,6 +31,9 @@ module.exports = {
           "url('../assets/technology/background-technology-tablet.jpg')",
         "technology-desktop":
           "url('../assets/technology/background-technology-desktop.jpg')",
+      },
+      fontSize: {
+        "10xl": "10rem",
       },
     },
   },

@@ -28,7 +28,9 @@ export const HeaderLink: React.FC<Props> = ({ children }) => (
 );
 
 export const H1: React.FC<Props> = ({ children }) => (
-  <h1 className={`${H1Font.className} text-8xl uppercase text-secondary`}>
+  <h1
+    className={`${H1Font.className} text-8xl uppercase text-secondary sm:text-10xl`}
+  >
     {children}
   </h1>
 );
@@ -43,7 +45,7 @@ export const H5: React.FC<Props> = ({ children }) => (
 
 export const Body: React.FC<Props> = ({ children }) => (
   <p
-    className={`${HeaderFont.className} text-lg text-primary capitalize tracking-wide text-center`}
+    className={`${HeaderFont.className} text-lg text-primary capitalize tracking-wide text-center lg:text-justify`}
   >
     {children}
   </p>

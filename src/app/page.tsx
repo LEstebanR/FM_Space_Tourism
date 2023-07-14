@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="h-full w-full border">
-      <div className="flex flex-col items-center justify-around h-full py-8 ">
-        <span className="flex flex-col items-center gap-2 sm:w-1/2">
+    <main className="h-full w-full">
+      <div className="flex flex-col lg:flex-row items-center justify-around h-full">
+        <span className="flex flex-col items-center gap-2 px-4 sm:w-1/2 lg:w-1/3">
           <H5>so, you want to travel to</H5>
           <H1>space</H1>
           <Body>
@@ -16,9 +16,11 @@ export default function Home() {
             world experience!
           </Body>
         </span>
-        <Link href="#">
-          <div className="bg-secondary rounded-full h-36 sm:h-60 w-36 sm:w-60 flex items-center justify-center">
-            <BodyMenu>Explore</BodyMenu>
+        <Link href="#" className="lg:mt-48">
+          <div className="bg-transparent hover:lg:bg-gray-decorator rounded-full lg:h-96 lg:w-96 lg:flex items-center justify-center">
+            <div className="bg-secondary rounded-full h-36 sm:h-60 lg:h-64 w-36 sm:w-60 lg:w-64 flex items-center justify-center">
+              <BodyMenu>Explore</BodyMenu>
+            </div>
           </div>
         </Link>
       </div>

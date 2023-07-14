@@ -19,18 +19,18 @@ export default function RootLayout({
 
   switch (pathname) {
     case "/":
-      background = "bg-home-mobile sm:bg-home-tablet md:bg-home-desktop";
+      background = "bg-home-mobile sm:bg-home-tablet lg:bg-home-desktop";
       break;
     case "/destination":
       background =
-        "bg-destination-mobile sm:bg-destination-tablet md:bg-destination-desktop";
+        "bg-destination-mobile sm:bg-destination-tablet lg:bg-destination-desktop";
       break;
     case "/crew":
-      background = "bg-crew-mobile sm:bg-crew-tablet md:bg-crew-desktop";
+      background = "bg-crew-mobile sm:bg-crew-tablet lg:bg-crew-desktop";
       break;
     case "/technology":
       background =
-        "bg-technology-mobile sm:bg-technology-tablet md:bg-technology-desktop";
+        "bg-technology-mobile sm:bg-technology-tablet lg:bg-technology-desktop";
       break;
   }
 

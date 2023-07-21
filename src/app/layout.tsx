@@ -40,7 +40,9 @@ export default function RootLayout({
         className={`${inter.className} flex flex-col h-screen  overflow-hidden bg-cover bg-no-repeat ${background}`}
       >
         <Header />
-        <div className="flex-1 overflow-y-auto">{children}</div>
+        <div className="flex-1 overflow-y-auto flex justify-center">
+          {children}
+        </div>
       </body>
     </html>
   );

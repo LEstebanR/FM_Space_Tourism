@@ -11,6 +11,7 @@ module.exports = {
         "gray-decorator": "rgba(151, 151, 151, 0.1036)",
         primary: "#D0D6F9",
         secondary: "#FFFFFF",
+        "gray-text": "rgba(255, 255, 255, 0.4951)",
       },
       backgroundImage: {
         "home-mobile": "url('../assets/home/background-home-mobile.jpg')",
@@ -34,6 +35,12 @@ module.exports = {
       },
       fontSize: {
         "10xl": "10rem",
+      },
+      maxHeight: {
+        "128": "50rem",
+      },
+      minHeight: {
+        "imgContainer": "16rem",
       },
     },
   },

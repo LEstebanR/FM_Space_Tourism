@@ -27,8 +27,8 @@ I tried to replicate the provided Figma design using good coding practices to ma
 ### Screenshot
 
 ![Home Desktop](./public/screenshots/home-desktop.png)
-![Home Tablet](./public/screenshots/home-desktop.png)
-![Home Mobile](./public/screenshots/home-desktop.png)
+![Home Tablet](./public/screenshots/home-tablet.png)
+![Home Mobile](./public/screenshots/home-mobile.png)
 
 ### Links
 
@@ -39,9 +39,9 @@ I tried to replicate the provided Figma design using good coding practices to ma
 
 ### Built with
 
-- [Next.js](https://nextjs.org/) - React framework
-  \_ Tailwind
-  Typescript
+- [Next.js](https://nextjs.org/)
+- Tailwind
+- Typescript
 
 ### What I learned
 

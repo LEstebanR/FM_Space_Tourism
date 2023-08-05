@@ -36,7 +36,7 @@ module.exports = {
           "url('/assets/technology/image-launch-vehicle-landscape.jpg')",
         "launch-vehicle-portrait":
           "url('/assets/technology/image-launch-vehicle-portrait.jpg')",
-        "spaceport-portrait": "url('/assets/technology/image-spaceport.jpg')",
+        "spaceport-portrait": "url('/assets/technology/image-spaceport-portrait.jpg')",
         "space-capsule-portrait": "url('/assets/technology/image-space-capsule-portrait.jpg')",
       },
       fontSize: {
@@ -47,6 +47,10 @@ module.exports = {
       },
       minHeight: {
         imgContainer: "16rem",
+      },
+      height: {
+        100: "35rem",
+        128: "50rem",
       },
     },
   },

@@ -71,6 +71,7 @@ export const crew = [
 export const technology = [
   {
     name: "Launch vehicle",
+    bg: "bg-launch-vehicle-portrait",
     images: {
       portrait: "launch-vehicle-portrait",
       landscape: "launch-vehicle-mobile",

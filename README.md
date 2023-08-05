@@ -1,34 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - Space tourism website solution
 
-## Getting Started
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This application was created with NextJs, Typescript and tailwind mainly. The idea was to apply my knowledge in Tailwind which is a technology that I am looking to improve.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### The challenge
 
-## Learn More
+I tried to replicate the provided Figma design using good coding practices to make it more readable, maintainable and scalable.
 
-To learn more about Next.js, take a look at the following resources:
+### Screenshot
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Home Desktop](./public/screenshots/home-desktop.png)
+![Home Tablet](./public/screenshots/home-desktop.png)
+![Home Mobile](./public/screenshots/home-desktop.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Links
 
-## Deploy on Vercel
+- Solution URL: [Here](https://github.com/LEstebanR/FM_Space_Tourism)
+- Live Site URL: [Here](https://fm-space-tourism-iota.vercel.app/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## My process
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Built with
+
+- [Next.js](https://nextjs.org/) - React framework
+  \_ Tailwind
+  Typescript
+
+### What I learned
+
+- I reinforced my knowledge of Tailwind.
+- I got to know NextJS App Router
+
+### Continued development
+
+Feedback is welcome
+
+### Useful resources
+
+- [Next Js](https://nextjs.org/docs)
+- [Tailwind documentation](https://tailwindcss.com/docs/installation)
+- [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+## Author
+
+- Website - [lesteban.dev](https://www.lesteban.dev/)
+- Frontend Mentor - [@LEstebanR](https://www.frontendmentor.io/profile/LEstebanR)
+
+## Acknowledgments
+
+Thank you Frontend Mentor.

@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../assets/shared/logo.svg";
 import Menu from "../assets/shared/icon-hamburger.svg";
 import Close from "../assets/shared/icon-close.svg";
 import { HeaderNum, HeaderLink } from "./Typography";
@@ -40,7 +39,8 @@ const Header: React.FC = () => {
       <div className=" sm:hidden top-0 z-20 h-screen w-8/12 fixed right-0 flex flex-col items-end gap-8 backdrop-blur-sm bg-white/30 ">
         <div className=" h-24 w-24  flex items-end justify-end px-8">
           <Image
-            src={Close}
+            src={"/assets/shared/icon-close.svg"}
+            width={40}
             alt="close"
             onClick={() => setShowMenu(false)}
             height={40}
@@ -68,7 +68,12 @@ const Header: React.FC = () => {
   return (
     <header className="text-white flex justify-between items-center m-1 h-24 px-4">
       <Link href="/">
-        <Image src={Logo} alt="Logo" />
+        <Image
+          src={"/assets/shared/logo.svg"}
+          alt="Logo"
+          width={30}
+          height={30}
+        />
       </Link>
       <div className="hidden lg:block border border-gray-decorator w-4/12 h-0 " />
       <nav className="hidden h-full sm:flex items-center backdrop-blur-xl">
@@ -83,9 +88,11 @@ const Header: React.FC = () => {
       </nav>
       {!showMenu ? (
         <Image
-          src={Menu}
+          src="/assets/shared/icon-hamburger.svg"
           alt="Menu"
           className="sm:hidden"
+          height={20}
+          width={20}
           onClick={() => setShowMenu(true)}
         />
       ) : (

@@ -1,8 +1,7 @@
 export const destinations = [
   {
     name: "Moon",
-    image:
-      "https://res.cloudinary.com/lesteban/image/upload/v1689388557/FM_space_tourism/image-moon_hg0vjr.png",
+    image: "/assets/destination/image-moon.png",
     description:
       "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
     distance: "384,400 km",
@@ -10,8 +9,7 @@ export const destinations = [
   },
   {
     name: "Mars",
-    image:
-      "https://res.cloudinary.com/lesteban/image/upload/v1689389412/FM_space_tourism/image-mars_tsldpk.png",
+    image: "/assets/destination/image-mars.png",
     description:
       "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
     distance: "225 mil. km",
@@ -19,8 +17,7 @@ export const destinations = [
   },
   {
     name: "Europa",
-    image:
-      "https://res.cloudinary.com/lesteban/image/upload/v1689389428/FM_space_tourism/image-europa_h3xcch.png",
+    image: "/assets/destination/image-europa.png",
     description:
       "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
     distance: "628 mil. km",
@@ -28,8 +25,7 @@ export const destinations = [
   },
   {
     name: "Titan",
-    image:
-      "https://res.cloudinary.com/lesteban/image/upload/v1689389442/FM_space_tourism/image-titan_kcof0p.png",
+    image: "/assets/destination/image-titan.png",
     description:
       "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
     distance: "1.6 bil. km",
@@ -40,8 +36,7 @@ export const destinations = [
 export const crew = [
   {
     name: "Douglas Hurley",
-    image:
-      "https://res.cloudinary.com/lesteban/image/upload/v1689982314/FM_space_tourism/image-douglas-hurley_yl5duv.png",
+    image: "/assets/crew/image-douglas-hurley.png",
     role: "Commander",
     bio: "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.",
   },

@@ -19,16 +19,6 @@ import { GoDotFill } from "react-icons/go";
 const CrewPage = () => {
   const [crewSelected, setCrewSelected] = React.useState(crew[0]);
 
-  setTimeout(() => {
-    const crewIndex = crew.indexOf(crewSelected);
-    if (crewIndex === crew.length - 1) {
-      setCrewSelected(crew[0]);
-    } else {
-      setCrewSelected(crew[crewIndex + 1]);
-    }
-  }
-  , 3000);
-
   return (
     <div className="flex flex-col items-center md:justify-between  gap-4 lg:flex-wrap  lg:w-6/12 lg:self-start lg:max-h-128 lg:fixed lg:left-0 lg:mt-4 lg:pl-32 lg:gap-36">
       <span className="flex gap-2 md:self-start md:pl-8  ">

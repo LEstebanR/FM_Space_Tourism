@@ -3,7 +3,7 @@ import { Barlow_Condensed, Bellefair } from "next/font/google";
 
 const Barlow = Barlow_Condensed({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["300", "400", "700"],
 });
 
 const BellefairF = Bellefair({
@@ -13,25 +13,28 @@ const BellefairF = Bellefair({
 
 interface Props {
   children: React.ReactNode;
+  className?: string;
 }
 
-export const HeaderNum: React.FC<Props> = ({ children }) => (
-  <p className={`${Barlow.className} text-base font-bold tracking-widest`}>
-    {children}
-  </p>
-);
-
-export const HeaderLink: React.FC<Props> = ({ children }) => (
+export const HeaderNum: React.FC<Props> = ({ children, className }) => (
   <p
-    className={`${Barlow.className} text-base uppercase tracking-wide cursor-pointer`}
+    className={`${Barlow.className} text-base font-bold tracking-widest ${className}`}
   >
     {children}
   </p>
 );
 
-export const H1: React.FC<Props> = ({ children }) => (
+export const HeaderLink: React.FC<Props> = ({ children, className }) => (
+  <p
+    className={`${Barlow.className} text-base uppercase tracking-wide cursor-pointer ${className}`}
+  >
+    {children}
+  </p>
+);
+
+export const H1: React.FC<Props> = ({ children, className }) => (
   <h1
-    className={`${BellefairF.className} text-8xl uppercase text-secondary sm:text-10xl`}
+    className={`${BellefairF.className} text-7xl uppercase text-secondary sm:text-10xl ${className}}`}
   >
     {children}
   </h1>
@@ -45,9 +48,9 @@ export const H4: React.FC<Props> = ({ children }) => (
   </h4>
 );
 
-export const H5: React.FC<Props> = ({ children }) => (
+export const H5: React.FC<Props> = ({ children, className }) => (
   <h5
-    className={`${Barlow.className} text-2xl text-primary uppercase tracking-wide `}
+    className={`${Barlow.className} text-xl text-primary uppercase font-thin ${className}}`}
   >
     {children}
   </h5>
@@ -55,7 +58,7 @@ export const H5: React.FC<Props> = ({ children }) => (
 
 export const Body: React.FC<Props> = ({ children }) => (
   <p
-    className={`${Barlow.className} text-lg text-primary capitalize tracking-wide text-center lg:text-justify lg:text-xl`}
+    className={`${Barlow.className} text-lg font-thin text-primary capitalize tracking-wide text-center lg:text-justify lg:text-xl`}
   >
     {children}
   </p>

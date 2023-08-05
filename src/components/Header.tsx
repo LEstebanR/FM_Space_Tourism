@@ -36,14 +36,14 @@ const Header: React.FC = () => {
 
   const MobileMenu: React.FC = () => {
     return (
-      <div className=" sm:hidden top-0 z-20 h-screen w-8/12 fixed right-0 flex flex-col items-end gap-8 backdrop-blur-sm bg-white/30 ">
+      <div className=" sm:hidden top-0 z-20 h-screen w-8/12 fixed right-0 flex flex-col items-end gap-8 backdrop-blur-2xl bg-white/5 ">
         <div className=" h-24 w-24  flex items-end justify-end px-8">
           <Image
             src={"/assets/shared/icon-close.svg"}
-            width={40}
+            width={20}
             alt="close"
             onClick={() => setShowMenu(false)}
-            height={40}
+            height={20}
           />
         </div>
         <ul className="list-none w-full flex flex-col gap-4 p-8">
@@ -52,7 +52,7 @@ const Header: React.FC = () => {
               <Link href={page.href}>
                 <span
                   onClick={() => setSelected(page.title)}
-                  className="flex gap-1"
+                  className="flex gap-3"
                 >
                   <HeaderNum>{page.number}</HeaderNum>
                   <HeaderLink>{page.title}</HeaderLink>
@@ -66,17 +66,17 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="text-white flex justify-between items-center m-1 h-24 px-4">
+    <header className="text-white flex justify-between items-center m-1 h-20 px-4 lg:mt-8">
       <Link href="/">
         <Image
           src={"/assets/shared/logo.svg"}
           alt="Logo"
-          width={30}
-          height={30}
+          width={40}
+          height={40}
         />
       </Link>
-      <div className="hidden lg:block border border-gray-decorator w-4/12 h-0 " />
-      <nav className="hidden h-full sm:flex items-center backdrop-blur-xl">
+      <div className="hidden lg:block border border-gray-decorator w-4/12 h-0 grow ml-12 z-10" />
+      <nav className="hidden h-full sm:flex items-center backdrop-blur-3xl lg:w-6/12 md:pl-12 lg:bg-white/5">
         {pages.map((page) => (
           <NavItem
             key={page.title}
@@ -91,8 +91,8 @@ const Header: React.FC = () => {
           src="/assets/shared/icon-hamburger.svg"
           alt="Menu"
           className="sm:hidden"
-          height={20}
-          width={20}
+          height={25}
+          width={25}
           onClick={() => setShowMenu(true)}
         />
       ) : (
@@ -123,7 +123,7 @@ const NavItem: React.FC<{
         }`}
         onClick={() => setSelected(page.title)}
       >
-        <HeaderNum>{page.number}</HeaderNum>
+        <HeaderNum className="md:hidden">{page.number}</HeaderNum>
         <HeaderLink>{page.title}</HeaderLink>
       </span>
     </Link>

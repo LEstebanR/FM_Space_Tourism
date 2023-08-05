@@ -19,8 +19,8 @@ const Destination = () => {
   );
 
   return (
-    <div className="text-white flex flex-col items-center gap-4 px-4 md:w-10/12 md:mt-4 lg:flex-row ">
-      <div className="md:w-full lg:w-6/12 items-center flex flex-col lg:h-5/6 lg:justify-around ">
+    <div className="text-white flex flex-col items-center gap-4 px-4 md:w-10/12 md:mt-4 lg:flex-row">
+      <div className="md:w-full lg:w-6/12 items-center flex flex-col lg:h-5/6 lg:justify-around gap-4 ">
         <span className="flex gap-2 md:self-start lg:w-full lg:self-start top-0">
           <TitleNumber>01</TitleNumber>
           <Title>Pick your destination</Title>
@@ -56,7 +56,7 @@ const Destination = () => {
                 className={`h-8 ${
                   destination.name === destinationSelected.name
                     ? "border-b-2 border-white"
-                    : ""
+                    : "text-primary"
                 }`}
                 onClick={() =>
                   setDestinationSelected(
@@ -71,12 +71,12 @@ const Destination = () => {
             );
           })}
         </ul>
-        <H1>{destinationSelected.name}</H1>
+        <H1 className="text-center self-center">{destinationSelected.name}</H1>
         <Body>{destinationSelected.description}</Body>
         <hr className="w-full border-gray-decorator my-4 md:my-12" />
         <div className="flex flex-col gap-8 items-center md:flex-row md:mt-4 md:justify-around md:w-full">
           <span>
-            <SubHeading2>avd. distance</SubHeading2>
+            <SubHeading2>avg. distance</SubHeading2>
             <SubHeading>{destinationSelected.distance}</SubHeading>
           </span>
           <span>

@@ -8,10 +8,10 @@ const TechnologyPage = () => {
   const [techSelected, setTechSelected] = React.useState(technology[0]);
   return (
     <div className="">
-      <span className="flex gap-2 justify-center md:self-start md:pl-8  ">
+      <div className="flex gap-2 justify-center md:self-start md:pl-8  ">
         <TitleNumber>03</TitleNumber>
         <Title>space launch 101</Title>
-      </span>
+      </div>
       <div className="lg:flex lg:pl-20 lg:w-screen lg:items-center">
         <div
           className={`w-screen h-44 md:h-80 bg-cover bg-no-repeat mt-4 lg:order-3 lg:w-6/12 lg:h-100 lg:bg-contain bg-right 

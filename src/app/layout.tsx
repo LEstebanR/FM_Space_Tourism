@@ -35,10 +35,11 @@ export default function RootLayout({
   }
 
   return (
-    <html lang="en" className="h-screen" title="Space Tourism">
+    <html lang="en" className="h-screen">
       <title>Space Tourism</title>
       <body
         className={`${inter.className} flex flex-col h-screen  overflow-hidden bg-cover bg-no-repeat ${background}`}
+        suppressHydrationWarning={true}
       >
         <Header />
         <div className="flex-1 overflow-y-auto flex justify-center">

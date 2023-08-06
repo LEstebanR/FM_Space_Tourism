@@ -21,10 +21,10 @@ const Destination = () => {
   return (
     <div className="text-white flex flex-col items-center gap-4 px-4 md:w-10/12 md:mt-4 lg:flex-row">
       <div className="md:w-full lg:w-6/12 items-center flex flex-col lg:h-5/6 lg:justify-around gap-4 ">
-        <span className="flex gap-2 md:self-start lg:w-full lg:self-start top-0">
+        <div className="flex gap-2 md:self-start lg:w-full lg:self-start top-0">
           <TitleNumber>01</TitleNumber>
           <Title>Pick your destination</Title>
-        </span>
+        </div>
         <Image
           src={destinationSelected.image}
           alt={destinationSelected.name}
@@ -75,14 +75,14 @@ const Destination = () => {
         <Body>{destinationSelected.description}</Body>
         <hr className="w-full border-gray-decorator my-4 md:my-12" />
         <div className="flex flex-col gap-8 items-center md:flex-row md:mt-4 md:justify-around md:w-full">
-          <span>
+          <div>
             <SubHeading2>avg. distance</SubHeading2>
             <SubHeading>{destinationSelected.distance}</SubHeading>
-          </span>
-          <span>
+          </div>
+          <div>
             <SubHeading2>est. travel time</SubHeading2>
             <SubHeading>{destinationSelected.travel}</SubHeading>
-          </span>
+          </div>
         </div>
       </div>
     </div>

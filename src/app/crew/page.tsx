@@ -21,31 +21,31 @@ const CrewPage = () => {
 
   return (
     <div className="flex flex-col items-center md:justify-between  gap-4 lg:flex-wrap  lg:w-6/12 lg:self-start lg:max-h-128 lg:fixed lg:left-0 lg:mt-4 lg:pl-32 lg:gap-36">
-      <span className="flex gap-2 md:self-start md:pl-8  ">
+      <div className="flex gap-2 md:self-start md:pl-8  ">
         <TitleNumber>02</TitleNumber>
         <Title>Meet your crew</Title>
-      </span>
+      </div>
       <div className="w-full flex flex-col items-center justify-end min-h-imgContainer  md:order-last">
         <Image
           src={crewSelected.image}
           alt={crewSelected.name}
           width={177}
           height={244}
-          className="md:hidden aspect-w-177 aspect-h-244"
+          className="md:hidden aspect-w-177 aspect-h-244 "
         />
         <Image
           src={crewSelected.image}
           alt={crewSelected.name}
           width={300}
           height={300}
-          className="hidden md:block lg:hidden self-center"
+          className="hidden md:block lg:hidden self-center w-auto"
         />
         <Image
           src={crewSelected.image}
           alt={crewSelected.name}
           width={445}
           height={445}
-          className="hidden lg:block aspect-w-445 aspect-h-445 ml-8 fixed bottom-0"
+          className="hidden lg:block aspect-w-445 aspect-h-445 ml-8 fixed bottom-0 w-auto"
         />
         <hr className="w-10/12 border-1 border-gray-decorator mb-4 md:hidden " />
       </div>

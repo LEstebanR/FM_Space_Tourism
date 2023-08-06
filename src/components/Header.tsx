@@ -3,8 +3,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Menu from "../assets/shared/icon-hamburger.svg";
-import Close from "../assets/shared/icon-close.svg";
 import { HeaderNum, HeaderLink } from "./Typography";
 
 const pages = [
@@ -44,19 +42,20 @@ const Header: React.FC = () => {
             alt="close"
             onClick={() => setShowMenu(false)}
             height={20}
+            className="h-auto w-auto cursor-pointer"
           />
         </div>
         <ul className="list-none w-full flex flex-col gap-4 p-8">
           {pages.map((page) => (
             <li key={page.title} onClick={() => setShowMenu(false)}>
               <Link href={page.href}>
-                <span
+                <div
                   onClick={() => setSelected(page.title)}
                   className="flex gap-3"
                 >
                   <HeaderNum>{page.number}</HeaderNum>
                   <HeaderLink>{page.title}</HeaderLink>
-                </span>
+                </div>
               </Link>
             </li>
           ))}
@@ -90,7 +89,7 @@ const Header: React.FC = () => {
         <Image
           src="/assets/shared/icon-hamburger.svg"
           alt="Menu"
-          className="sm:hidden"
+          className="sm:hidden w-auto "
           height={25}
           width={25}
           onClick={() => setShowMenu(true)}
@@ -114,7 +113,7 @@ const NavItem: React.FC<{
   <ul>
     <li className="inline-block mr-10 h-full">
       <Link href={page.href}>
-        <span
+        <div
           className={`flex items-center gap-1 h-full ${
             page.title === selected &&
             "border-b-2 border-white hover:border-white"
@@ -126,7 +125,7 @@ const NavItem: React.FC<{
         >
           <HeaderNum className="md:hidden">{page.number}</HeaderNum>
           <HeaderLink>{page.title}</HeaderLink>
-        </span>
+        </div>
       </Link>
     </li>
   </ul>

@@ -111,23 +111,25 @@ const NavItem: React.FC<{
   selected: string;
   setSelected: React.Dispatch<React.SetStateAction<string>>;
 }> = ({ page, selected, setSelected }) => (
-  <li className="inline-block mr-10 h-full">
-    <Link href={page.href}>
-      <span
-        className={`flex items-center gap-1 h-full ${
-          page.title === selected &&
-          "border-b-2 border-white hover:border-white"
-        } ${
-          page.title !== selected &&
-          "hover:border-b-2 hover:border-gray-decorator"
-        }`}
-        onClick={() => setSelected(page.title)}
-      >
-        <HeaderNum className="md:hidden">{page.number}</HeaderNum>
-        <HeaderLink>{page.title}</HeaderLink>
-      </span>
-    </Link>
-  </li>
+  <ul>
+    <li className="inline-block mr-10 h-full">
+      <Link href={page.href}>
+        <span
+          className={`flex items-center gap-1 h-full ${
+            page.title === selected &&
+            "border-b-2 border-white hover:border-white"
+          } ${
+            page.title !== selected &&
+            "hover:border-b-2 hover:border-gray-decorator"
+          }`}
+          onClick={() => setSelected(page.title)}
+        >
+          <HeaderNum className="md:hidden">{page.number}</HeaderNum>
+          <HeaderLink>{page.title}</HeaderLink>
+        </span>
+      </Link>
+    </li>
+  </ul>
 );
 
 export default Header;

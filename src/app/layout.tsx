@@ -36,6 +36,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" className="h-screen" title="Space Tourism">
+      <title>Space Tourism</title>
       <body
         className={`${inter.className} flex flex-col h-screen  overflow-hidden bg-cover bg-no-repeat ${background}`}
       >

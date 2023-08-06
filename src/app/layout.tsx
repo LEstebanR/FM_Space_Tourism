@@ -37,6 +37,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-screen">
       <title>Space Tourism</title>
+      <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+          property="og:title"
+        />
+      </head>
       <body
         className={`${inter.className} flex flex-col h-screen  overflow-hidden bg-cover bg-no-repeat ${background}`}
         suppressHydrationWarning={true}
